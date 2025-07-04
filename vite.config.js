@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         favoritos: resolve(__dirname, "./pages/favoritos/index.html"),
+        detail: resolve(__dirname, 'detail.html'),
       },
     },
   },

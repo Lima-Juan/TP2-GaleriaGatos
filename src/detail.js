@@ -19,9 +19,9 @@ async function showCatDetail(id) {
           ${
             breed
               ? `<p><strong>Origen:</strong> ${breed.origin}</p>
-                 <p><strong>Temperamento:</strong> ${breed.temperament}</p>
-                 <p><strong>Descripción:</strong> ${breed.description}</p>
-                 <a href="${breed.wikipedia_url}" target="_blank">🔗 Wikipedia</a>`
+                <p><strong>Temperamento:</strong> ${breed.temperament}</p>
+                <p><strong>Descripción:</strong> ${breed.description}</p>
+                <a href="${breed.wikipedia_url}" target="_blank">🔗 Wikipedia</a>`
               : '<p>No hay información de raza disponible.</p>'
           }
           <button onclick="location.href='index.html'">Volver</button>
