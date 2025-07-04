@@ -11,20 +11,6 @@
   gap: 1.5rem;
 }
 
-.detailContainer{
-  background: white;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  max-width: 900px;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  padding: 2rem;
-  transition: all 0.3s ease;
-}
-
 /* Tarjetas */
 .card {
   background-color: #fff;

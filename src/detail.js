@@ -1,11 +1,11 @@
 import './style.css'
 import { getCatById } from "./api.js";
+import { getCatImages } from "./api.js";
 
 const container = document.getElementById('detailContainer');
 const params = new URLSearchParams(window.location.search);
 const catId = params.get('id');
 
-//Aqui donde se realiza la muestra de detalles en la pagina con una derivacion a wikipedia para mas informacion.
 async function showCatDetail(id) {
   try {
     const cat = await getCatById(id);
@@ -24,7 +24,7 @@ async function showCatDetail(id) {
                  <a href="${breed.wikipedia_url}" target="_blank">🔗 Wikipedia</a>`
               : '<p>No hay información de raza disponible.</p>'
           }
-          <button onclick="location.href='./index.html'">Volver</button>
+          <button onclick="location.href='index.html'">Volver</button>
         </div>
       </div>
     `;
