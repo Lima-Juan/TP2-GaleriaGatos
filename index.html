@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería de Gatos</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div id="app">
+      <h1>🐾Galería de Gatos🐾</h1>
+    <!--OPCIONES Y FILTRADO-->
+    <a href="pages/favoritos/index.html" class="favoritos-link">🧡 Ver favoritos</a>
+    <div id="gallery"></div>
+      <div class="controls">
+        <input id="searchInput" type="text" placeholder="Buscar raza..." />
+        <select id="originFilter">
+          <option value="">Todos los países</option>
+        </select>
+        <button id="sortButton">Ordenar A–Z</button>
+      </div>
+
+      <!--CONTENEDOR DE DETALLES-->
+      <div id="catContainer" class="grid"></div>
+      <div className="max-w-7xl mx-auto"></div>
+    </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

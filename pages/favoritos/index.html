@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favoritos</title>
+    <script type="module" src="../../src/favoritos.js"></script>
+    <link rel="stylesheet" href="../../style.css"/>
+  </head>
+  <body>
+    <h1>Gatos Favoritos 🐾</h1>
+     <nav class="controls">
+      <input type="text" id="searchInput" placeholder="Buscar por raza..." />
+      <select id="originFilter">
+        <option value="">Filtrar por origen</option>
+      </select>
+      <button id="sortButton">Ordenar A-Z</button>
+      <a href="../../index.html" class="favoritos-link">← Volver a galería</a>
+    </nav>
+    <section id="catContainer" class="gallery"></section>
+    <div id="app"></div>
+  </body>
+</html>

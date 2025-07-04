@@ -1,0 +1,281 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Grid de tarjetas */
+#catContainer.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.detailContainer{
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card button {
+  margin-top: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #ff4c4c;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.controls input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.controls button {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #388e3c;
+}
+
+#originFilter {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#originFilter:hover {
+  border-color: #aaa;
+}
+
+#originFilter:focus {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.favoritos-link {
+  display: inline-block;
+  background-color: #ff6b81;      /* Rosa fuerte */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(255, 107, 129, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.favoritos-link:hover {
+  background-color: #ff4757;     /* Rosa más oscuro al hover */
+  box-shadow: 0 6px 12px rgba(255, 71, 87, 0.6);
+}
+
+.favoritos-link:active {
+  transform: scale(0.95);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card .info {
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+.card h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0 0 0.6rem 0;
+  color: #555;
+}
+
+.card .actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card button {
+  flex: 1;
+  padding: 0.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:first-child {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.card button:first-child:hover {
+  background-color: #357ABD;
+}
+
+.card button.remove-btn {
+  background-color: #ff6b81;
+  color: white;
+}
+
+.card button.remove-btn:hover {
+  background-color: #e0435a;
+}
+
+/* Controles superiores */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls input[type="text"],
+.controls select {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  min-width: 180px;
+}
+
+.controls button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #357ABD;
+}
+
+/* Link volver */
+.favoritos-link {
+  background-color: #ff6b81;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.favoritos-link:hover {
+  background-color: #e0435a;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls input[type="text"],
+  .controls select,
+  .controls button {
+    min-width: 100%;
+  }
+}
